@@ -1,0 +1,405 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  list-style: none;
+}
+
+body {
+  background-color: #fafafa;
+  position: relative;
+}
+@font-face {
+  font-family: hb;
+  src: url(./font/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: hbl;
+  src: url(./font/Helvetica-Light.ttf);
+}
+
+p,
+li,
+a {
+  font-family: hbl, "Trebuchet MS";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: hb, sans-serif;
+}
+
+.sub__system nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  box-shadow: 0 5px 20px rgba(34, 51, 34, 0.189);
+  align-items: center;
+  padding: 0 5%;
+}
+
+.sub__system nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  left: 100%;
+  background-image: linear-gradient(
+      270deg,
+      rgba(4, 67, 88, 0.846),
+      rgb(1, 1, 47)
+    ),
+    url(./device01.png);
+  top: 99.5px;
+  padding: 3em 0;
+  height: 100vh;
+  transition: all .2s ease-out;
+  overflow: hidden;
+}
+
+.sub__system nav ul.active {
+  left: 0;
+}
+
+.sub__system nav li {
+  padding: 1.5em 0;
+  border-bottom: 3px groove rgba(0, 27, 230, 0.206);
+}
+
+.sub__system nav a {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1em;
+  color: #fff;
+  /* text-decoration: underline !important; */
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.237);
+  padding-bottom: 2px;
+  padding-left: 1em;
+}
+
+.sub__system nav .fas {
+  font-size: 2.1em;
+}
+
+.sub__system main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-image: linear-gradient(
+      150deg,
+      rgba(35, 35, 126, 0.822),
+      rgba(101, 101, 212, 0.683)
+    ),
+    url(./mars.jpeg);
+  padding: 7vh 1em;
+  color: #eef;
+}
+
+main h1 {
+  font-size: 3em;
+}
+
+main h1 span {
+  color: #fff;
+}
+
+main h4 {
+  font-weight: 100;
+  text-align: center;
+  line-height: 1.6;
+  text-shadow: 0 0 5em black;
+  color: #fff;
+}
+
+main hr {
+  width: 100%;
+  border: 1px dotted rgba(255, 255, 255, 0.385);
+  margin: 0.5em 0;
+}
+
+main p mark {
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+main p {
+  text-align: justify;
+  background-color: rgb(1, 7, 30);
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.more__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.more__details .more {
+  flex-basis: 100%;
+  margin: auto;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.more__details .more-1 {
+  background-image: url(./01.jpeg);
+}
+.more__details .more-2 {
+  background-image: url(./02.jpeg);
+}
+/* .more__details .more-3 {
+      background-image: url(./03.jpeg);
+}
+.more__details .more-4 {
+      background-image: url(./04.jpeg);
+}
+.more__details .more-5 {
+      background-image: url(./05.jpeg);
+}
+.more__details .more-6 {
+      background-image: url(./07.jpeg);
+} */
+
+/* ===================================================== */
+.device__specifications {
+  margin: 1em 0;
+  background-color: #fafffa;
+}
+.device__specifications table {
+  width: 100%;
+  /* border: 1px solid rgb(0, 0, 11); */
+  border-collapse: collapse;
+}
+
+.device__specifications table caption {
+  font-size: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.device__specifications table tr td {
+  font-size: 1.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(0, 0, 36);
+  font-weight: bold;
+  height: 50px;
+  padding: 10px 1.5em;
+  text-align: left;
+  border-bottom: 4px solid #ddd;
+}
+.device__specifications table tr td:first-of-type {
+  color: grey;
+}
+.device__specifications table tr td:last-of-type {
+  font-family: hb;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+  transform: scale(0.9, 0.9);
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.device__specifications table tr {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.life_is_good {
+  margin: 2em auto !important;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.life_is_good a {
+  width: 100%;
+  font-size: 1.3em;
+  background-color: rgb(67, 88, 223);
+  color: #fff;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 2em #00000022;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.life_is_good a:hover {
+  background-color: rgb(52, 72, 199);
+  color: #ddf;
+}
+
+.ds__img {
+  background-image: linear-gradient(
+      150deg,
+      rgba(35, 35, 126, 0.239),
+      rgba(101, 101, 212, 0.354)
+    ),
+    url(./mars.jpeg);
+  padding: 7vh 1em;
+  color: #eef;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2s ease-out;
+}
+
+.ds__img:hover {
+  background-image: linear-gradient(
+      150deg,
+      rgba(35, 35, 126, 0),
+      rgba(101, 101, 212, 0)
+    ),
+    url(./device01.png);
+}
+
+.item__desc__container {
+  margin: 2em auto;
+  width: 85%;
+}
+
+.item__desc-1 header {
+  margin-bottom: 1em;
+}
+
+.item__desc-1 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.81em;
+}
+
+.item__desc-1 > div p {
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.175);
+  font-size: 1.1em;
+}
+
+.item__desc-2 {
+  margin: 2em 0;
+}
+
+.item__desc-2 p {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.item__desc-2 h4 {
+  margin-bottom: 0.7em;
+}
+
+.item__desc-2 h4 span {
+  color: deepskyblue;
+  font-size: 1.5em;
+}
+
+.remote {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0 0 0;
+}
+
+.seventh {
+  display: flex;
+  justify-content: center;
+}
+
+.DMI {
+  margin: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 1em auto;
+}
+
+footer h2 span {
+  color: red;
+}
+
+footer h2 {
+  text-align: center !important;
+  color: darkblue;
+  margin-bottom: 0.5em;
+  border: 2px solid red;
+}
+
+footer p {
+  border: 1px solid rgba(255, 0, 0, 0.102);
+  /* font-style: oblique; */
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  margin-bottom: 0.2em;
+}
+
+.footer_laste {
+      background-color: #fff;
+      box-shadow: 0 1px 2em rgba(0, 0, 0, 0.082);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0.5em;
+      margin: 5em 0 0 0;
+}
+
+.whatsapp {
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 1000;
+}
+
+.otp, .hints {
+      background-color: rgb(167, 0, 0);
+      color: #fff;
+      padding: 0.5em 0.8em;
+      font-weight: bold;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgb(71, 4, 4);
+      box-shadow: 0 0 2em #11111153;
+}
+
+
+
+@media (max-width: 400px) {
+      main h1 {
+            font-size: 2em;
+      }
+      main h4 {
+            font-size: 0.7em !important;
+      }
+}
