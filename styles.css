@@ -17,7 +17,6 @@ html {
 body {
   background-color: #fafafa;
   position: relative;
-  overflow: hidden;
 }
 @font-face {
   font-family: hb;
