@@ -120,10 +120,13 @@ main h1 span {
 }
 
 main h3 {
-  text-align: center;
+  text-align: justify;
   line-height: 1.6;
   text-shadow: 0 0 5em black;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
 }
 
 main hr {
