@@ -116,8 +116,7 @@ main h1 span {
   color: #fff;
 }
 
-main h4 {
-  font-weight: 100;
+main h3 {
   text-align: center;
   line-height: 1.6;
   text-shadow: 0 0 5em black;
