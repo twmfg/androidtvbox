@@ -7,15 +7,18 @@
   text-decoration: none;
   line-height: 1.5;
   list-style: none;
+  overflow: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
   background-color: #fafafa;
   position: relative;
+  overflow: hidden;
 }
 @font-face {
   font-family: hb;
