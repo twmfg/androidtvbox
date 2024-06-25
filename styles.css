@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fafafa;
   position: relative;
